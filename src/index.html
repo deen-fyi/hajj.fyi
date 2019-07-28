@@ -35,7 +35,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/749cd5905c.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Scheherazade|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic|Lato:400,400i,700,700i,900,900i|Quicksand:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
@@ -50,7 +50,7 @@
       <div class="header-content">
         <div class="header-content-inner">
           <h1 id="homeHeading">Ḥajj</h1>
-          <p>The Pilgrimage</p>
+          <span class="subHeader">The Pilgrimage</span>
         </div>
       </div>
     </header>
@@ -119,25 +119,48 @@
       <div class="container text-left">
         <div class="col-lg-10 mx-auto text-left">
           <h2>FAQ's</h2>
-          <p class="faq-question">How often must a Muslim perform Ḥajj?</p>
-          <p class="faq-answer">
-            Muslims only have to perform the pilgrimage to Mecca once in their lifetime, and they only have to do so if they have the financial means and physical health to get there and perform the tasks. However, there are many Muslims who choose to go multiple times, and some go every single year!
-          </p>
-          <hr>
-          <p class="faq-question">Who must perform Ḥajj?</p>
-          <p class="faq-answer">
-            Ḥajj is an obligation at least once in a lifetime for Muslims who are able to go. Children, mentally handicapped, financially unable and physically unable people are exempted from performing Ḥajj. Many people save up their entire lives for this one event though there is no blame on them if they never accumulate enough savings to go.
-          </p>
-          <hr>
-          <p class="faq-question">Why are Muslims emulating Abraham?</p>
-          <p class="faq-answer">
-            Muslims look to Muhammad (may God bless and preserve his legacy) as their primary guide and teacher in this world. However, the Islamic tradition recognizes several other prophets. The Qurān is filled with lessons from the lives of other prophets of God. These include, but aren’t limited to: Abraham, Noah, Jonas, Job, Moses, David, Solomon, and Jesus (May God preserve all their legacies). Muslims believe that Prophet Muhammad taught the pure and unadulterated rituals originially performed by Abraham, so Muslims are following both Abraham and Muhammad in this act.
-          </p>
-          <hr>
-          <p class="faq-question">Who is Allāh? Why do Muslims call their god, Allāh, and not God?</p>
-          <p class="faq-answer">
-            “Allāh,” is the Arabic for “The God.” Allāh is referring to Himself as “the one and only God,” but as a proper noun. Additionally, this is how Allāh addresses Himself in the Qurān, so Muslims like to use the name God gave for Himself over other translations and names.
-          </p>
+          <div id="faqAccordian">
+            <div class="card">
+              <div class="collapsed faqHeader" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                How often must a Muslim perform Ḥajj? <i class="fal fa-plus openerThing"></i>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                <div class="card-body">
+                  Muslims only have to perform the pilgrimage to Mecca once in their lifetime, and they only have to do so if they have the financial means and physical health to get there and perform the tasks. However, there are many Muslims who choose to go multiple times, and some go every single year!
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="collapsed faqHeader" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Who must perform Ḥajj?<i class="fal fa-plus openerThing"></i>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  Ḥajj is an obligation at least once in a lifetime for Muslims who are able to go. Children, mentally handicapped, financially unable and physically unable people are exempted from performing Ḥajj. Many people save up their entire lives for this one event though there is no blame on them if they never accumulate enough savings to go.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="collapsed faqHeader" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Why are Muslims emulating Abraham?<i class="fal fa-plus openerThing"></i>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                <div class="card-body">
+                  Muslims look to Muhammad (may God bless and preserve his legacy) as their primary guide and teacher in this world. However, the Islamic tradition recognizes several other prophets. The Qurān is filled with lessons from the lives of other prophets of God. These include, but aren’t limited to: Abraham, Noah, Jonas, Job, Moses, David, Solomon, and Jesus (May God preserve all their legacies). Muslims believe that Prophet Muhammad taught the pure and unadulterated rituals originially performed by Abraham, so Muslims are following both Abraham and Muhammad in this act.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="collapsed faqHeader" id="headingThree" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Who is Allāh? Why do Muslims call their god, Allāh, and not God?<i class="fal fa-plus openerThing"></i>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingThree">
+                <div class="card-body">
+                  “Allāh,” is the Arabic for “The God.” Allāh is referring to Himself as “the one and only God,” but as a proper noun. Additionally, this is how Allāh addresses Himself in the Qurān, so Muslims like to use the name God gave for Himself over other translations and names.
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!--
           <h5 class="faq-question"></h5>
