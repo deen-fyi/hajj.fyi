@@ -1,66 +1,29 @@
 // Styling for the masthead
-#downArray {
-  transform: rotate(180deg);
-  display: inline-block;
-}
-
-#homeHeading {
-  font-family: 'Quicksand', sans-serif;
-}
-
 header.masthead {
   width: 100%;
-  height: 80px;
-  color: white;
-  background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
-  background-position: center;
-  @include background-cover;
-  .header-content {
-    width: 100%;
-    padding: 15px 15px;
-    text-align: left;
-    .header-content-inner {
-      display: flex;
-      justify-content: right;
-      align-items:baseline;
+  height: 56px;
+  color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24);
 
-      #homeHeading {
-        font-size: 35px;
-        font-weight: 700;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: #19A539;
-      }
-      hr {
-        margin: 30px auto;
-      }
-      .subHeader {
-        font-family: 'Quicksand', sans-serif;
-        color: #124c1f;
-        font-size: 19px;
-        font-weight: 300;
-        margin-bottom: 0px;
-        margin-left: 10px;
-      }
+  .masthead-inner {
+    max-width: 808px;
+    padding: 12px 16px;
+    margin: auto;
+    font-family: 'Karla', sans-serif;
+
+    #brandName {
+      font-size: 27px;
+      display: inline-block;
+      margin-right: 8px;
     }
-  }
-  @media (min-width: 768px) {
-    height: 120px;
-    .header-content {
-      padding: 25px 15px;
 
-      .header-content-inner {
-        max-width: 600px;
-        margin-right: auto;
-        margin-left: auto;
-        #homeHeading {
-          font-size: 50px;
-        }
-        .subHeader {
-          font-size: 18px;
-          max-width: 80%;
-        }
-      }
+    #brandCaption {
+      font-weight: 400;
+    }
+
+    #brandIcon {
+      float: right;
+      font-size: 27px;
     }
   }
 }
