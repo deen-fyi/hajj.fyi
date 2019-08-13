@@ -26,6 +26,7 @@
   "devDependencies": {
     "browser-sync": "2.18.13",
     "del": "^3.0.0",
+    "gulp": "^4.0.2",
     "gulp-awspublish": "^3.3.0",
     "gulp-awspublish-router": "^0.1.3",
     "gulp-clean-css": "^3.9.0",

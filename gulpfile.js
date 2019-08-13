@@ -265,6 +265,7 @@ var defaultBuild = gulp.series(cleanBuild, core, cleanPostBuild);
 // Dev task with browserSync
 var devTasks = gulp.series(cleanBuild, core, browserSyncFunc, gulp.parallel(watcherFunc));
 gulp.task('dev', devTasks);
+exports.dev = devTasks;
 
 // Publish to AWS
 var publishTasks = gulp.series(defaultBuild, publish);

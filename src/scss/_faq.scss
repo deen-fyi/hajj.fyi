@@ -1,13 +1,17 @@
 // Styling for the call to action section
 .faq {
-  padding: 20px 0;
-  h2 {
+  max-width: 808px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  h4 {
+    font-size: 17px;
     margin: 0 auto 20px;
   }
 
   .card {
     margin-bottom: 15px;
-    border-radius: 10px;
+    //border-radius: 10px;
   }
 
   .card-body {
